@@ -16,7 +16,7 @@ public class ParamsParserTest {
         ParamsParser paramsParser = new ParamsParser(strings);
         paramsParser.parse();
 
-        assertPathsEqual("data/templates", paramsParser.getBaseDirFile());
+        assertPathsEqual("data/templates", paramsParser.getTemplateBaseDirFile());
         assertPathsEqual("regex.conf", paramsParser.getConfigFile());
         Assert.assertTrue(paramsParser.isVerbose());
     }
@@ -27,7 +27,7 @@ public class ParamsParserTest {
         ParamsParser paramsParser = new ParamsParser(strings);
         paramsParser.parse();
 
-        assertPathsEqual("data/templates", paramsParser.getBaseDirFile());
+        assertPathsEqual("data/templates", paramsParser.getTemplateBaseDirFile());
         assertPathsEqual("regex.conf", paramsParser.getConfigFile());
         Assert.assertTrue(paramsParser.isVerbose());
     }

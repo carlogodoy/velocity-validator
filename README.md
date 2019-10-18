@@ -6,6 +6,12 @@ Purpose
 ---------------------
 Simple validation tool for detecting bugs in Apache Velocity templates. It iterates through directories and validates every .vm file. Errors are printed with filename, error and possible solutions.
 
+Mods from Fork
+---------------------
+Usage is per file -file=<file-path>
+
+Added support for template evaluation with "-compile" flag:  -file<file-path> -eval
+
 Usage
 ---------------------
 
